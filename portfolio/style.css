@@ -118,7 +118,7 @@ body {
 
 .section {
     display: flex;
-   /* border: 1px solid red;*/
+    /*border: 1px solid red;*/
 }
 
 .section-hero {
@@ -181,7 +181,7 @@ body {
     margin: 100px auto 60px;
     width: 700px;
     height: 80px;
-   /* border: 1px solid white;*/
+    /*border: 1px solid white;*/
 }
 
 .section-title-h2 {
@@ -289,7 +289,98 @@ body {
     /*border: 1px solid pink;*/
 }
 
+.section-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.section-portfolio-title{
+    border: 1px solid pink;
+}
 
+.section-portfolio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 895px;
+    margin: auto;
+    /*border: 1px solid white;*/
+}
 
+.button-black {
+    width: 220px;
+    height: 55px;
+    background-color: #000000;
+    font-size: 20px;
+    line-height: 40px;
+    /*position: relative;*/
+    /*margin-bottom: 0;*/
+    border: 1px solid #bdae82;
+}
 
+.button-black a {
+    text-decoration: none;
+    color: #bdae82;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    width: 1400px;
+    height: 1145px;
+}
+
+.portfolio-item-1 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+.portfolio-item-2 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+.portfolio-item-3 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+.portfolio-item-4 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-5 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-6 {
+    width: 450px;
+    height: 560px;
+    background-image: url(assets/img/portfolio/portfolio-img-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
