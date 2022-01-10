@@ -166,7 +166,7 @@ body {
 .button-gold:active {
     border: 2px solid #000000;
     cursor: pointer;
-    transform: 0.2s;
+    transition: 0.2s;
 }
 
 .section-skills {
