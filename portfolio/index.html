@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alexa Rise</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
-            <div class="logo"></div>
+            <div class="logo">
+                <svg class="logo-icon">
+                    <use xlink:href="assets/svg/svg/sprite.svg#Logo"></use>
+                </svg>
+            </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Video</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Price</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
             <div class="switch">
@@ -41,7 +46,7 @@
             </section>
             <section class="section section-skills">
                 <div class="section-title">
-                    <h2 class="section-title-h2">Skills</h2>
+                    <h2 class="section-title-h2" id="skills">Skills</h2>
                 </div>
                 <div class="skills-items">
                     <div class="skill-item">
@@ -68,13 +73,13 @@
             </section>
             <section class="section section-portfolio">
                 <div class="section-title">
-                    <h2 class="section-title-h2">Portfolio</h2>
+                    <h2 class="section-title-h2" id="portfolio">Portfolio</h2>
                 </div>
                 <div class="section-portfolio-buttons">
-                    <button class="button-black"><a href="">Winter</a></button>
-                    <button class="button-black"><a href="">Spring</a></button>
-                    <button class="button-black"><a href="">Summer</a></button>
-                    <button class="button-black"><a href="">Autumn</a></button>
+                    <button class="button-black">Winter</button>
+                    <button class="button-black">Spring</button>
+                    <button class="button-black">Summer</button>
+                    <button class="button-black">Autumn</button>
                 </div>
                 <div class="portfolio-items">
                     <div class="portfolio-item-1"></div>
@@ -87,15 +92,19 @@
             </section>
             <section class="section section-video">
                 <div class="section-title">
-                    <h2 class="section-title-h2">Video</h2>
+                    <h2 class="section-title-h2" id="video">Video</h2>
                 </div>
                 <div class="section-video-player">
-                    <div class="play-hover"></div>
+                    <button class="button-video">
+                        <svg class="play-hover">
+                            <use xlink:href="assets/svg/svg/sprite.svg#Play_hover"></use>
+                        </svg>
+                    </button>
                 </div>
             </section>
             <section class="section section-price">
                 <div class="section-title">
-                    <h2 class="section-title-h2">Price</h2>
+                    <h2 class="section-title-h2" id="price">Price</h2>
                 </div>
                 <div class="price-items">
                     <div class="price-item">
@@ -108,7 +117,7 @@
                             Readiness 2-3 weeks <br>
                             Make up, visage
                         </p>
-                        <button class="button-gold"><a href="">Order shooting</a></button>
+                        <button class="button-gold">Order shooting</button>
                     </div>
                     <div class="price-item">
                         <p class="tariff">Premium</p>
@@ -120,7 +129,7 @@
                             Readiness 1-2 weeks <br>
                             Make up, visage
                         </p>
-                        <button class="button-gold"><a href="">Order shooting</a></button>
+                        <button class="button-gold">Order shooting</button>
                     </div>
                     <div class="price-item">
                         <p class="tariff">Gold</p>
@@ -132,13 +141,13 @@
                             Readiness 1 week <br>
                             Make up, visage, hairstyle
                         </p>
-                        <button class="button-gold"><a href="">Order shooting</a></button>
+                        <button class="button-gold">Order shooting</button>
                     </div>
                 </div>
             </section>
             <section class="section section-contacts">
                 <div class="contacts-container">
-                    <h2 class="section-title-h2 contacts-title">Contact me</h2>
+                    <h2 class="section-title-h2 contacts-title" id="contacts">Contact me</h2>
                         <input class="input" name="email" type="text" placeholder='E-mail'>
                         <input class="input" name="tel" type="text" placeholder="Phone">
                         <textarea class="input input-textarea" name="message" cols="22" rows="3" placeholder="Message"></textarea>
@@ -152,21 +161,39 @@
             <div class="footer-data">
                 <span>&copy;</span>
                 <span>2022</span>
-                <span><a href="">github</a></span>
+                <span><a href="https://github.com/Kseniya-Korolchuk" class="github-link" target="_blank">github</a></span>
             </div>
-            <span><a href="">Rolling Scopes School</a></span>
+            <span><a href="https://rs.school/js-stage0/" class="rss-link" target="_blank">Rolling Scopes School</a></span>
             <ul class="social-list">
-                <li class="icon"><a href=""><img src="assets/svg/social/inst.svg" alt="instagram"></a></li>
-                <li class="icon"><a href=""><img src="assets/svg/social/fb.svg" alt="facebook"></a></li>
-                <li class="icon"><a href=""><img src="assets/svg/social/tw.svg" alt="twittert"></a></li>
-                <li class="icon"><a href=""><img src="assets/svg/social/pinterest.svg" alt="pinterest"></a></li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="assets/svg/svg/sprite.svg#inst"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="assets/svg/svg/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="assets/svg/svg/sprite.svg#tw"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon">
+                            <use xlink:href="assets/svg/svg/sprite.svg#pinterest"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-            <!---<div class="social-list">
-                <div class="icon"><a href=""><img src="assets/png/footer/inst.png" alt="instagram"></a></div>
-                <div class="icon"><a href=""><img src="assets/png/footer/fb.png" alt="facebook"></a></div>
-                <div class="icon"><a href=""><img src="assets/png/footer/tw.png" alt="twittert"></a></div>
-                <div class="icon"><a href=""><img src="assets/png/footer/pinterest.png" alt="pinterest"></a></div>-->
-            </div>
         </div>
     </footer>
 </body>
