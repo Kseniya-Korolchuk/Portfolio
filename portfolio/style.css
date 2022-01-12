@@ -46,17 +46,18 @@ body {
     padding: 0;
     margin: 0 auto;
 }
-/*.header {
 
-}*/
+.header {
+
+}
 
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url(assets/img/header/header-bg.jpg);
     height: 90px;
     padding: 0 20px;
+    background-image: url(assets/img/header/header-bg.jpg);
 }
 
 .logo-icon {
@@ -74,24 +75,24 @@ body {
 .nav-list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     padding: 30px;
+    list-style: none;
 }
 
 .nav-item {
-    display: inline;
+    /*display: inline;*/
 }
 
 .nav-link {
     font-size: 20px;
     color: #FFFFFF;
-    transition: 0.25s;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 .switch {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-between;
     width: 70px;
 }
@@ -101,18 +102,21 @@ body {
     font-weight: 700;
 }
 
-.lang a {
-    color: #FFFFFF;
+a {
     text-decoration: none;
 }
 
-.lang a span {
+.lang a {
+    color: #FFFFFF;
+}
+
+.lang a:hover {
     color: #bdae82;
 }
 
-/*.main {
+.main {
 
-}*/
+}
 
 .section {
     display: flex;
@@ -274,9 +278,9 @@ body {
     align-items: center;
 }
 
-/*.section-portfolio-title{
+.section-portfolio-title{
     
-}*/
+}
 
 .section-portfolio-buttons {
     display: flex;
@@ -504,9 +508,9 @@ input:-webkit-autofill {
     resize: none;
 }
 
-/*.footer {
+.footer {
 
-}*/
+}
 
 .footer-container {
     display: flex;
