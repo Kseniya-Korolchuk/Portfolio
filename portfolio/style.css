@@ -67,6 +67,8 @@ body {
     transition: 0.25s;
 }
 
+/***************************** NAV ****************************/
+
 .nav {
     width: 500px;
     margin-left: auto;
@@ -90,6 +92,8 @@ body {
     transition: 0.25s;
 }
 
+/************************ RADIO-BUTTON ************************/
+
 .switch {
     display: flex;
     /*flex-direction: row;*/
@@ -97,29 +101,44 @@ body {
     width: 70px;
 }
 
-.lang, .slash {
+.form-radio-btn {
+    display: inline-block;
+}
+
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+	border: none;
+	user-select: none;
+}
+
+.form_radio_btn label:hover {
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+	color: #bdae82;
+}
+
+.slash {
     font-size: 20px;
     font-weight: 700;
 }
 
-a {
-    text-decoration: none;
-}
-
-.lang a {
-    color: #FFFFFF;
-}
-
-.lang a:hover {
-    color: #bdae82;
-}
+/****************************MAIN****************************/
 
 .main {
 
 }
 
 .section {
-    display: flex;
+    /*display: flex;*/
 }
 
 .section-hero {
