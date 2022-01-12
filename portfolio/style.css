@@ -47,6 +47,8 @@ body {
     margin: 0 auto;
 }
 
+/*************************** HEADER ***************************/
+
 .header {
 
 }
@@ -60,11 +62,15 @@ body {
     background-image: url(assets/img/header/header-bg.jpg);
 }
 
+.logo {
+    height: 50px;
+}
+
 .logo-icon {
     width: 50px;
     height: 50px;
     fill: #FFFFFF;
-    transition: 0.25s;
+    transition: 0.25s;  
 }
 
 /***************************** NAV ****************************/
@@ -82,7 +88,7 @@ body {
 }
 
 .nav-item {
-    /*display: inline;*/
+    
 }
 
 .nav-link {
@@ -96,7 +102,6 @@ body {
 
 .switch {
     display: flex;
-    /*flex-direction: row;*/
     justify-content: space-between;
     width: 70px;
 }
@@ -138,15 +143,17 @@ body {
 }
 
 .section {
-    /*display: flex;*/
+    
 }
+
+/*********************** SECTION HERO ***********************/
 
 .section-hero {
     display: flex;
+    height: 820px;
     background-image: url(assets/img/hero/bg.jpg);
     background-position: center -90px;
     background-repeat: no-repeat;
-    height: 820px;
 }
 
 .section-hero-represent {
@@ -166,10 +173,10 @@ body {
 }
 
 .section-hero-represent p {
+    width: 470px;
+    margin: 0 0 25px;
     font-size: 20px;
     line-height: 40px;
-    margin: 0 0 25px;
-    width: 470px;
 }
 
 .button-gold {
@@ -191,6 +198,8 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
+
+/********************* SECTION SKILLS *********************/
 
 .section-skills {
     display: flex;
@@ -232,6 +241,7 @@ body {
     align-items: center;
     width: 320px;
     height: 240px;
+    margin-bottom: 2px;                     /*<------- just layout compensation */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -244,33 +254,33 @@ body {
 }
 
 .skill-item-img-1 {
-    background-image: url(assets/svg/skills/camera.svg);
     width: 62px;
     height: 50px;
+    background-image: url(assets/svg/skills/camera.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .skill-item-img-2 {
-    background-image: url(assets/svg/skills/video.svg);
     width: 62px;
     height: 50px;
+    background-image: url(assets/svg/skills/video.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .skill-item-img-3 {
-    background-image: url(assets/svg/skills/image.svg);
     width: 62px;
     height: 50px;
+    background-image: url(assets/svg/skills/image.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .skill-item-img-4 {
-    background-image: url(assets/svg/skills/mic.svg);
     width: 62px;
     height: 50px;
+    background-image: url(assets/svg/skills/mic.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -284,12 +294,14 @@ body {
 }
 
 .skill-item-text {
+    text-align: center;
     margin: 20px 0 0;
     padding: 0 20px;
     font-size: 18px;
-    line-height: 36px;
-    text-align: center;
+    line-height: 36px;   
 }
+
+/********************* SECTION PORTFOLIO *********************/
 
 .section-portfolio {
     display: flex;
@@ -312,21 +324,21 @@ body {
 .button-black {
     width: 220px;
     height: 55px;
-    background-color: #000000;
+    padding: 0;
     font-size: 20px;
     line-height: 40px;
     color: #bdae82;
-    padding: 0;
+    background-color: #000000;
     border: 2px solid #bdae82;
 }
 
 .button-black:active,
 .button-black:hover  {
+    cursor: pointer;
+    color: #000000;
     background-color: #bdae82;
     border: none;
-    color: #000000;
     transition: 0.2s;
-    cursor: pointer;
 }
 
 .portfolio-items {
@@ -334,36 +346,36 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 60px;
     width: 1400px;
     height: 1145px;
+    margin-top: 60px;
 }
 
 .portfolio-item-1 {
     width: 450px;
     height: 560px;
+    margin-bottom: 25px;
     background-image: url(assets/img/portfolio/portfolio-img-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 25px;
 }
 
 .portfolio-item-2 {
     width: 450px;
     height: 560px;
+    margin-bottom: 25px;
     background-image: url(assets/img/portfolio/portfolio-img-2.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 25px;
+    background-repeat: no-repeat; 
 }
 
 .portfolio-item-3 {
     width: 450px;
     height: 560px;
+    margin-bottom: 25px;
     background-image: url(assets/img/portfolio/portfolio-img-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 25px;
 }
 
 .portfolio-item-4 {
@@ -390,6 +402,8 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************** SECTION VIDEO **********************/
+
 .section-video {
     display: flex;
     flex-direction: column;
@@ -413,10 +427,12 @@ body {
 }
 
 .play-hover {
-    height: 130px;
     width: 130px;
+    height: 130px; 
     fill: #FFFFFF;
 }
+
+/*********************** SECTION PRICE ***********************/
 
 .section-price {
     display: flex;
@@ -439,7 +455,7 @@ body {
     align-items: center;
     width: 450px;
     height: 505px;
-    padding: 43px 0 38px;
+    padding: 40px 0 38px;
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid #bdae82;
@@ -456,18 +472,20 @@ body {
 .price {
     margin: 20px 0;
     font-family: 'Merriweather', serif;
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 700;
     line-height: 48px;
     color: #bdae82;
 }
 
 .tarif-description {
-    margin: 0 0 38px;
+    text-align: center;
+    margin: 0 0 40px;
     font-size: 18px;
     line-height: 36px;
-    text-align: center;
 }
+
+/********************* SECTION CONTACTS *********************/
 
 .section-contacts {
     width: 1440px;
@@ -481,10 +499,10 @@ body {
 .contacts-container {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     display: flex;
     width: 450px;
     height: 445px;
+    margin-left: auto;
 }
 
 .contacts-title {
@@ -507,9 +525,9 @@ body {
     
 }
 
-input:-webkit-autofill {
-    transition: background-color 5000s ease-in-out 0s;
+input:-webkit-autofill { 
    -webkit-text-fill-color: #bdae82 !important;
+   transition: background-color 5000s ease-in-out 0s;
 }
 
 ::placeholder {
@@ -518,14 +536,16 @@ input:-webkit-autofill {
 
 .input-textarea {
     min-height: 100px;
+    resize: none;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 40px;
     font-family: inherit;
     color: #FFFFFF;
     outline: none;
-    resize: none;
 }
+
+/************************** FOOTER ***************************/
 
 .footer {
 
@@ -533,22 +553,22 @@ input:-webkit-autofill {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1440px;
     height: 150px;
-    font-size: 20px;
-    line-height: 50px;
-    align-items: center;
     padding: 20px;
     margin: auto;
-    justify-content: space-between;
+    font-size: 20px;
+    line-height: 50px;  
 }
 
 .footer-data {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 182px;
-    padding-right: 13px;
+    width: 185px;
+    padding-right: 15px;
 }
 
 .social-list {
@@ -557,24 +577,31 @@ input:-webkit-autofill {
     align-items: center;
     width: 188px;
     height: 50px;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
+    /*border: 1px solid white;*/
+}
+
+.social-list li a {
+    display: block;   
 }
 
 .social-icon {
     width: 32px;
     height: 32px;
+    margin-top: 50%;
     fill: #FFFFFF;
     transition: 0.25s;
+    /*border: 1px solid white;*/
 }
 
 .play-hover:hover,
 .logo-icon:hover,
 .social-icon:hover {
-    fill: #bdae82;
-    transition: 0.25s;
     cursor: pointer;
+    fill: #bdae82;
+    transition: 0.25s;  
 }
 
 .github-link:hover,
