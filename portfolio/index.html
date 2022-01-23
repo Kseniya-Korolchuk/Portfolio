@@ -26,15 +26,18 @@
                 </ul>
             </nav>
             <div class="switch">
-                <div class="form_radio_btn">
-                    <input id="radio-1" type="radio" name="radio" value="1" >
+                <div class="form_radio_btn en">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked>
                     <label for="radio-1">en</label>
                 </div>
                 <div class="slash">/</div>
-                <div class="form_radio_btn">
+                <div class="form_radio_btn ru">
                     <input id="radio-2" type="radio" name="radio" value="2">
                     <label for="radio-2">ru</label>
                 </div>
+            </div>
+            <div class="burger">
+                <span></span>
             </div>
         </div>
     </header>
@@ -85,7 +88,7 @@
                     <button class="button-black">Winter</button>
                     <button class="button-black">Spring</button>
                     <button class="button-black">Summer</button>
-                    <button class="button-black">Autumn</button>
+                    <button class="button-gold">Autumn</button>
                 </div>
                 <div class="portfolio-items">
                     <div class="portfolio-item-1"></div>
@@ -157,7 +160,7 @@
                         <input class="input" name="email" type="email" placeholder='E-mail'>
                         <input class="input" name="tel" type="tel" placeholder="Phone">
                         <textarea class="input input-textarea" name="message" cols="22" rows="3" placeholder="Message"></textarea>
-                        <input type="submit" class="button-gold" value="Send message">
+                        <button class="button-gold">Send message</button>
                 </div>
             </section>
         </div>
@@ -203,5 +206,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="adaptiveMenu.js"></script>
 </body>
 </html>
