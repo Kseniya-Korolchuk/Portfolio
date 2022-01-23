@@ -698,7 +698,7 @@ body {
     margin-top: 60px;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1280px) {
     .portfolio-items {
         max-width: 950px;
         padding: 0 10px;
@@ -731,6 +731,7 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .portfolio-item-2 {
@@ -740,6 +741,7 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-2.jpg);
     background-position: center;
     background-repeat: no-repeat; 
+    background-size: 100%;
 }
 
 .portfolio-item-3 {
@@ -749,6 +751,7 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .portfolio-item-4 {
@@ -757,6 +760,7 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-4.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .portfolio-item-5 {
@@ -765,6 +769,7 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .portfolio-item-6 {
@@ -773,9 +778,10 @@ body {
     background-image: url(assets/img/portfolio/portfolio-img-6.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .portfolio-item-1,
     .portfolio-item-2,
     .portfolio-item-3,
