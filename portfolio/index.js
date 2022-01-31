@@ -36,9 +36,7 @@ function setIcon () {
     else {
         switchIcon.firstElementChild.setAttribute('xlink:href', 'assets/svg/sprite.svg#carbon_moon');
     }
-  }
-
-
+}
 
 
 let portfolioBtns = document.querySelectorAll('.button-black');
