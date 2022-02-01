@@ -24,7 +24,7 @@ if(localStorage.getItem('theme')) {
     arrayOfClasses.forEach(element => element.classList.toggle('light-theme'));
     let theme = document.body.classList.contains('light-theme') ? 'light-theme' : '';
     if (theme == 'light-theme') {
-        switchIcon.firstElementChild.setAttribute('xlink:href', 'assets/svg/sprite.svg#carbon_moon');
+        switchIcon.firstElementChild.setAttribute('xlink:href', './assets/svg/sprite.svg#carbon_moon');
     }
     localStorage.setItem('theme', theme);
 }
