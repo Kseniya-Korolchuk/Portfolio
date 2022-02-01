@@ -89,7 +89,7 @@ if(localStorage.getItem('lang')) {
 }
 
 
-const seasons = ['Winter', 'Spring', 'Summer', 'Autumn'];
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
 
 seasons.forEach(season => {
     for(let i = 1; i <= 6; i++) {
