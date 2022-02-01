@@ -24,7 +24,7 @@ if(localStorage.getItem('theme')) {
     arrayOfClasses.forEach(element => element.classList.toggle('light-theme'));
     let theme = document.body.classList.contains('light-theme') ? 'light-theme' : '';
     if (theme == 'light-theme') {
-        switchIcon.firstElementChild.setAttribute('xlink:href', './assets/svg/sprite.svg#carbon_moon');
+        switchIcon.firstElementChild.setAttribute('xlink:href', 'assets/svg/sprite.svg#carbon_moon');
     }
     localStorage.setItem('theme', theme);
 }
@@ -52,7 +52,7 @@ portfolioBtns.forEach(function (b) {
 
 function changeImg(folder) {
     const portfolioImages = document.querySelectorAll('.portfolio-image');
-    portfolioImages.forEach((img, index) => img.src = `assets/img/portfolio/${folder}/${index + 1}.jpg`);
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/portfolio/${folder}/${index + 1}.jpg`);
   }
 
   function removeClass(collection, className) {
@@ -94,7 +94,7 @@ const seasons = ['Winter', 'Spring', 'Summer', 'Autumn'];
 seasons.forEach(season => {
     for(let i = 1; i <= 6; i++) {
         const img = new Image();
-        img.src = `assets/img/portfolio/${season}/${i}.jpg`;
+        img.src = `./assets/img/portfolio/${season}/${i}.jpg`;
     }
 });
 
