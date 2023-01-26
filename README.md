@@ -1,5 +1,6 @@
 
 ## HTML &amp; CSS, JS, PixelPerfect, Figma
+**deploy: https://kseniya-korolchuk.github.io/Portfolio/portfolio**
 
 # Portfolio
 
